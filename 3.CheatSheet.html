@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>3.CheatSheet</title>
+</head>
+<body>
+    <h1>3.CheatSheet by Sheila Hautzmayer</h1>
+
+    <section>
+
+        <h2>Html for Lists</h2>
+
+        <h3>1)An ordered list </h3>
+
+        <p>
+            <ul>
+                <li>Object1</li>
+                <li>Object2</li>
+                <li>Object3</li>
+            </ul>
+
+            <br>&lt;ul&gt;<br>
+            &lt;li&gt;Object1 &lt;/li&gt;<br>
+            &lt;li&gt;Object2 &lt;/li&gt;<br>
+            &lt;li&gt;Object3 &lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </p>
+
+        <h3>2)An unordered list</h3>
+
+        <p>
+            <ol>
+                <li>Object1</li>
+                <li>Object2</li>
+                <li>Object3</li>
+            </ol>
+
+            <br>&lt;ol&gt;<br>
+            &lt;li&gt;Object1 &lt;/li&gt;<br>
+            &lt;li&gt;Object2 &lt;/li&gt;<br>
+            &lt;li&gt;Object3 &lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </p>
+
+
+        <h3>3)A description list</h3>
+
+        <p>
+            <dl>
+                <dt>Object1</dt>
+                <dd>- Description</dd>
+                <dt>Object2</dt>
+                <dd>- Description</dd>
+            </dl>
+
+            <br>&lt;dl&gt;<br>
+            &lt;dt&gt;Object1 &lt;/dt&gt;<br>
+            &lt;dd&gt;- Description &lt;/dd&gt;<br>
+            &lt;dt&gt;Object2 &lt;/dt&gt;<br>
+            &lt;dd&gt;- Description &lt;/dd&gt;<br>
+            &lt;/dl&gt;
+        </p>
+
+
+        <h3>4)A nested list</h3>
+
+        <p>
+            <ul>
+                <li>Object1</li>
+                <li>
+                    Object2
+                    <ul>
+                        <li>First</li>
+                        <li>Second</li>
+                    </ul>
+                </li>
+                <li>Object3</li>
+            </ul>
+
+            <br>&lt;ul&gt;<br>
+            &lt;li&gt;Object1 &lt;/li&gt;<br>
+            &lt;li&gt;<br>
+            Object2<br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;First&lt;/li&gt;<br>
+            &lt;li&gt;Second&lt;/li&gt;<br>
+            &lt;/ul&gt;
+            &lt;/li&gt;<br>
+            &lt;li&gt;Object3&lt;/li&gt;<br>
+            <br>&lt;/ul&gt;<br>
+
+        </p>
+
+
+
+
+
+    </section>
+
+    <section>
+
+        <h2>Css for Lists</h2>
+
+        <h3>1)Different list item markers</h3>
+
+        <p>
+
+            ul.a { <br>
+            list-style-type: circle;<br>
+            }<br><br>
+
+            ul.b {<br>
+            list-style-type: square;<br>
+            }<br><br>
+
+            ol.c {<br>
+            list-style-type: upper-roman;<br>
+            }<br><br>
+
+            ol.d {<br>
+            list-style-type: lower-alpha;<br>
+            }<br>
+
+        </p>
+
+        <h3>2)An image as the list item marker</h3>
+
+        <p>
+
+            ul {<br>
+            list-style-image: url('sqpurple.gif');<br>
+            }<br>
+
+        </p>
+
+        <h3>3)Position the list item markers</h3>
+
+        <p>
+
+            ul.a {<br>
+            list-style-position: outside;<br>
+            }<br><br>
+
+            ul.b {<br>
+            list-style-position: inside;<br>
+            }<br>
+
+        </p>
+
+        <h3>4)Remove default settings</h3>
+
+        <p>
+
+            ul {<br>
+            list-style-type: none;<br>
+            margin: 0;<br>
+            padding: 0;<br>
+            }<br>
+
+        </p>
+
+
+
+
+    </section>
+
+
+    <section>
+
+        <h2>Htmls for tables</h2>
+
+        <h3>1)Defining an HTML table</h3>
+
+        <p>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+            </table>
+
+            <br><br>&lt;table style="width:100%"&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;th&gt;Firstname&lt;/th&gt;<br>
+            &lt;th&gt;Lastname&lt;/th&gt;<br>
+            &lt;th&gt;Age&lt;/th&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Jill&lt;/td&gt;<br>
+            &lt;td&gt;Smith&lt;/td&gt;<br>
+            &lt;td&gt;50&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Eve&lt;/td&gt;<br>
+            &lt;td&gt;Jackson&lt;/td&gt;<br>
+            &lt;td&gt;94&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+
+        </p>
+
+        <h3>2)HTML table-Cells that span many columns</h3>
+
+        <p>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Telephone</th>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>55577854</td>
+                    <td>55577855</td>
+                </tr>
+            </table>
+
+            <br><br>&lt;table style="width:100%"&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;th&gt;Name&lt;/th&gt;<br>
+            &lt;th colspan="2"&gt;Telephone&lt;/th&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Bill Gates&lt;/td&gt;<br>
+            &lt;td&gt;55577854&lt;/td&gt;<br>
+            &lt;td&gt;55577855&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+
+        </p>
+
+
+        <h3>3)HTML table-Cells that span many rows</h3>
+
+        <p>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Name:</th>
+                    <td>Bill Gates</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Telephone:</th>
+                    <td>55577854</td>
+                </tr>
+                <tr>
+                    <td>55577855</td>
+                </tr>
+            </table>
+
+            <br><br> &lt;table style="width:100%"&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;th&gt;Name:&lt;/th&gt;<br>
+            &lt;td&gt;Bill Gates&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;th rowspan="2"&gt;Telephone:&lt;/th&gt;<br>
+            &lt;td&gt;55577854&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;55577855&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+
+        </p>
+
+        <h3>4)HTML table-Adding a caption</h3>
+
+        <p>
+
+            <table style="width:100%">
+                <caption>Monthly savings</caption>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$50</td>
+                </tr>
+            </table>
+
+
+            <br><br>&lt;table style="width:100%"&gt;<br>
+            &lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+
+        </p>
+
+
+
+
+    </section>
+
+    <section>
+
+        <h2>Css for tables</h2>
+
+        <h3>1)Table borders</h3>
+
+        <p>
+
+            table, th, td {<br>
+            border: 1px solid black;<br>
+            }<br>
+
+        </p>
+
+        <h3>2)Collapse table borders</h3>
+
+        <p>
+
+            table {<br>
+            border-collapse: collapse;<br>
+            }<br><br>
+
+            table, th, td {<br>
+            border: 1px solid black;<br>
+            }<br>
+
+        </p>
+
+        <h3>3)Table width and height</h3>
+
+        <p>
+
+            table {<br>
+            width: 100%;<br>
+            }<br><br>
+
+            th {<br>
+            height: 50px;<br>
+            }<br>
+
+        </p>
+
+
+        <h3>4)Striped Tables</h3>
+
+        <p>
+
+            tr:nth-child(even) {background-color: #f2f2f2;}
+
+        </p>
+
+        <h3>5)Borders</h3>
+
+        <h4>+Style</h4>
+
+        <p>
+
+            p.dotted {border-style: dotted;}<br>
+            p.dashed {border-style: dashed;}<br>
+            p.solid {border-style: solid;}<br>
+            p.double {border-style: double;}<br>
+            p.groove {border-style: groove;}<br>
+            p.ridge {border-style: ridge;}<br>
+            p.inset {border-style: inset;}<br>
+            p.outset {border-style: outset;}<br>
+            p.none {border-style: none;}<br>
+            p.hidden {border-style: hidden;}<br>
+            p.mix {border-style: dotted dashed solid double;}<br>
+
+        </p>
+
+        <h4>+Width</h4>
+
+        <p>
+
+            p.one {<br>
+            border-style: solid;<br>
+            border-width: 5px;<br>
+            }<br><br>
+
+            p.two {<br>
+            border-style: solid;<br>
+            border-width: medium;<br>
+            }<br><br>
+
+            p.three {<br>
+            border-style: solid;<br>
+            border-width: 2px 10px 4px 20px;<br>
+            }<br>
+
+        </p>
+
+        <h4>+Color</h4>
+
+        <p>
+
+            p.one {<br>
+            border-style: solid;<br>
+            border-color: red;<br>
+            }<br><br>
+
+            p.two {<br>
+            border-style: solid;<br>
+            border-color: green;<br>
+            }<br><br>
+
+            p.three {<br>
+            border-style: solid;<br>
+            border-color: red green blue yellow;<br>
+            }<br>
+
+        </p>
+
+        <h4>+Individual Sides</h4>
+
+        <p>
+
+            p {<br>
+            border-top-style: dotted;<br>
+            border-right-style: solid;<br>
+            border-bottom-style: dotted;<br>
+            border-left-style: solid;<br>
+            }<br><br>
+
+            <h4>The example above gives the same result as this:</h4><br><br>
+
+            p {<br>
+            border-style: dotted solid;<br>
+            }<br>
+
+        </p>
+        
+        <h4>+Shortand Property</h4>
+
+        <p>
+
+            p {<br>
+            border: 5px solid red;<br>
+            }<br><br>
+
+            <h4>You can also specify all the individual border properties for just one side:</h4><br><br>
+
+            p {<br>
+            border-left: 6px solid red;<br>
+            background-color: lightgrey;<br>
+            }<br><br>
+
+            p {<br>
+            border-bottom: 6px solid red;<br>
+            background-color: lightgrey;<br>
+            }<br>
+
+        </p>
+
+        <h4>+Rounded Borders</h4>    
+
+        <p>
+
+            p {<br>
+            border: 2px solid red;<br>
+            border-radius: 5px;<br>
+            }
+
+        </p>
+
+    </section>
+
+
+</body>
+</html>
